@@ -68,5 +68,10 @@
     "bootstrap-vue": "^2.0.0-rc.20",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6"
+  },
+  "template": {
+    "usedBy": [
+      "arlac77/hook-ci-frontend"
+    ]
   }
 }
