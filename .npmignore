@@ -1,0 +1,13 @@
+build
+dist
+tests
+doc
+*.log
+*.tmp
+.DS_Store
+.test
+.tmp
+.npmrc
+.travis.yml
+.vscode
+.nyc_output
