@@ -26,7 +26,7 @@
     "rollup-plugin-node-resolve": "^5.1.0",
     "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-vue": "^5.0.0",
-    "semantic-release": "^15.13.16",
+    "semantic-release":"^15.13.17",
     "vue-template-compiler": "^2.6.10",
     "connect-history-api-fallback": "^1.6.0"
   },
