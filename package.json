@@ -24,7 +24,7 @@
     "browser-sync": "^2.26.7",
     "express": "^4.17.1",
     "http-proxy-middleware": "^0.19.1",
-    "npm-pkgbuild": "^6.5.5",
+    "npm-pkgbuild": "^6.6.0",
     "puppeteer": "^1.18.1",
     "rollup": "^1.16.6",
     "rollup-plugin-commonjs": "^10.0.1",
