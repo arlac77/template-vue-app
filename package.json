@@ -63,13 +63,15 @@
       "mjs"
     ]
   },
+  "config": {
+    "api" : "/api",
+    "proxyTarget" : "https://somewhere.com/",
+    "urlPrefix": "/services/{{name}}/"
+  },
   "pacman": {
     "groups": "{{group}}",
     "install": "pacman/install.sh",
     "installdir": "/services/{{name}}/frontend",
-    "properties": {
-      "urlPrefix": "/services/{{name}}/"
-    },
     "content": {
       "${installdir}/": {
         "base": "public"
