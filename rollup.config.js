@@ -75,11 +75,11 @@ if (isProduction) {
     const app = express();
 
     app.use(
-      config.urlPrefix + config.api,
+      config.api,
       proxy({
         target: config.proxyTarget,
         changeOrigin: true,
-        ws: true,
+       // ws: true,
         logLevel: "debug"
       })
     );
