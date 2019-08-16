@@ -38,9 +38,7 @@
     "vue-template-compiler": "^2.6.10",
     "connect-history-api-fallback": "^1.6.0"
   },
-  "engines": {
-    "node": ">=10.16.2"
-  },
+  "engines": ">=10.16.3",
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
