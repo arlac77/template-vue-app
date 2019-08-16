@@ -90,5 +90,6 @@
     "usedBy": [
       "arlac77/hook-ci-frontend"
     ]
-  }
+  },
+  "node": ">=10.16.3"
 }
