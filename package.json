@@ -39,7 +39,7 @@
     "connect-history-api-fallback": "^1.6.0"
   },
   "engines": {
-    "node": ">=12.9.1"
+    "node": ">=12.10.0"
   },
   "release": {
     "plugins": [
