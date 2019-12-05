@@ -1,8 +1,11 @@
+import resolve from "@rollup/plugin-node-resolve";
+import json from "@rollup/plugin-json";
+
+
 import copy from "rollup-plugin-copy";
 import replace from "rollup-plugin-replace";
 import vue from "rollup-plugin-vue";
 import css from "rollup-plugin-css-only";
-import json from "rollup-plugin-json";
 import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
 import nodeGlobals from "rollup-plugin-node-globals";

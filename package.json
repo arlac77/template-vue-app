@@ -19,6 +19,12 @@
     "vuex": "^3.1.1"
   },
   "devDependencies": {
+    "rollup-plugin-node-resolve": "--delete--",
+    "rollup-plugin-json": "--delete--",
+
+    "@rollup/plugin-json": "^4.0.0",
+    "@rollup/plugin-node-resolve": "^6.0.0",
+
     "@semantic-release/exec": "^3.3.7",
     "ava": "^2.4.0",
     "browser-sync": "^2.26.7",
@@ -30,7 +36,6 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.1.0",
     "rollup-plugin-css-only": "^1.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-node-globals": "^1.4.0",
     "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-vue": "^5.0.1",
