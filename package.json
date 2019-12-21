@@ -88,7 +88,7 @@
     },
     "depends": {
       "systemd": ">=244",
-      "nginx-mainline": ">=1.17.3"
+      "nginx-mainline": ">=1.17.6"
     }
   },
   "template": {
