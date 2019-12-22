@@ -21,9 +21,11 @@
   "devDependencies": {
     "rollup-plugin-node-resolve": "--delete--",
     "rollup-plugin-json": "--delete--",
+    "rollup-plugin-commonjs": "--delete--",
 
     "@rollup/plugin-json": "^4.0.0",
     "@rollup/plugin-node-resolve": "^6.0.0",
+    "@rollup/plugin-commonjs": "^11.0.0",
 
     "@semantic-release/exec": "^3.3.7",
     "ava": "^2.4.0",
@@ -32,8 +34,7 @@
     "http-proxy-middleware": "^0.19.1",
     "npm-pkgbuild": "^6.11.1",
     "puppeteer": "^1.19.0",
-    "rollup": "^1.27.13",
-    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup": "^1.27.14",
     "rollup-plugin-copy": "^3.1.0",
     "rollup-plugin-css-only": "^1.0.0",
     "rollup-plugin-node-globals": "^1.4.0",
