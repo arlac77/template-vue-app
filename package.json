@@ -19,10 +19,6 @@
     "vuex": "^3.1.2"
   },
   "devDependencies": {
-    "rollup-plugin-node-resolve": "--delete--",
-    "rollup-plugin-json": "--delete--",
-    "rollup-plugin-commonjs": "--delete--",
-
     "@rollup/plugin-json": "^4.0.0",
     "@rollup/plugin-node-resolve": "^6.1.0",
     "@rollup/plugin-commonjs": "^11.0.1",
@@ -32,7 +28,7 @@
     "browser-sync": "^2.26.7",
     "express": "^4.17.1",
     "http-proxy-middleware": "^0.19.1",
-    "npm-pkgbuild": "^6.11.1",
+    "npm-pkgbuild": "^6.11.3",
     "puppeteer": "^1.19.0",
     "rollup": "^1.28.0",
     "rollup-plugin-copy": "^3.1.0",
