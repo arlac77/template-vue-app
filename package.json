@@ -1,7 +1,4 @@
 {
-  "name": "{{name}}",
-  "description": "{{description}}",
-  "version": "0.0.0-semantic-release",
   "keywords": [
     "web"
   ],
@@ -19,29 +16,17 @@
     "vuex": "^3.1.2"
   },
   "devDependencies": {
-    "@rollup/plugin-json": "^4.0.0",
-    "@rollup/plugin-node-resolve": "^6.1.0",
-    "@rollup/plugin-commonjs": "^11.0.1",
-
-    "@semantic-release/exec": "^3.3.7",
-    "ava": "^2.4.0",
     "browser-sync": "^2.26.7",
     "express": "^4.17.1",
     "http-proxy-middleware": "^0.19.1",
-    "npm-pkgbuild": "^6.11.3",
     "puppeteer": "^1.19.0",
-    "rollup": "^1.28.0",
     "rollup-plugin-copy": "^3.1.0",
     "rollup-plugin-css-only": "^1.0.0",
     "rollup-plugin-node-globals": "^1.4.0",
     "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-vue": "^5.1.4",
-    "semantic-release": "^15.14.0",
     "vue-template-compiler": "^2.6.10",
     "connect-history-api-fallback": "^1.6.0"
-  },
-  "engines": {
-    "node": ">=12.14.0"
   },
   "release": {
     "plugins": [
@@ -53,19 +38,6 @@
           "publishCmd": "npx npm-pkgbuild --pkgver ${nextRelease.version} pkgbuild pacman makepkg"
         }
       ]
-    ]
-  },
-  "ava": {
-    "files": [
-      "tests/*-test.mjs"
-    ],
-    "require": [
-      "esm"
-    ],
-    "babel": false,
-    "compileEnhancements": false,
-    "extensions": [
-      "mjs"
     ]
   },
   "config": {
@@ -84,11 +56,18 @@
       "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf"
     },
     "depends": {
-      "systemd": ">=244.1",
-      "nginx-mainline": ">=1.17.6"
+      "systemd": ">=244.1"
     }
   },
   "template": {
+    "inheritFrom": [
+      "arlac77/npm-package-template-root",
+      "arlac77/npm-package-template-travis",
+      "arlac77/npm-package-template-rollup",
+      "arlac77/npm-package-template-nginx",
+      "arlac77/npm-package-template-pacman",
+      "arlac77/npm-package-template-release"
+    ],
     "usedBy": [
       "arlac77/hook-ci-frontend"
     ]
