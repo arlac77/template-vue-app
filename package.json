@@ -1,6 +1,7 @@
 {
   "keywords": [
-    "web"
+    "web",
+    "vue"
   ],
   "scripts": {
     "start": "rollup -c rollup.config.js -w",
