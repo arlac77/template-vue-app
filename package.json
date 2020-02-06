@@ -20,7 +20,7 @@
     "browser-sync": "^2.26.7",
     "express": "^4.17.1",
     "http-proxy-middleware": "^0.20.0",
-    "puppeteer": "^2.1.0",
+    "puppeteer": "^2.1.1",
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-css-only": "^1.0.0",
     "rollup-plugin-node-globals": "^1.4.0",
