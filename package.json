@@ -1,11 +1,9 @@
 {
   "keywords": [
-    "web",
     "vue"
   ],
   "scripts": {
     "start": "rollup -c rollup.config.js -w",
-    "test": "echo disabled",
     "prepare": "rollup -c rollup.config.js",
     "package": "npm-pkgbuild pkgbuild pacman makepkg"
   },
@@ -29,42 +27,10 @@
     "vue-template-compiler": "^2.6.11",
     "connect-history-api-fallback": "^1.6.0"
   },
-  "release": {
-    "plugins": [
-      [
-        "@semantic-release/exec",
-        {
-          "publishCmd": "npx npm-pkgbuild --pkgver ${nextRelease.version} pkgbuild pacman makepkg"
-        }
-      ]
-    ]
-  },
-  "config": {
-    "api": "/api",
-    "proxyTarget": "https://somewhere.com/",
-    "urlPrefix": "/services/{{name}}/"
-  },
-  "pacman": {
-    "groups": "{{group}}",
-    "hooks": "pacman/install.sh",
-    "installdir": "/services/{{name}}/frontend",
-    "content": {
-      "${installdir}/": {
-        "base": "public"
-      },
-      "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf"
-    },
-    "depends": {
-      "systemd": ">=244.2"
-    }
-  },
   "template": {
     "inheritFrom": [
-      "arlac77/npm-package-template-root",
-      "arlac77/npm-package-template-rollup",
-      "arlac77/npm-package-template-nginx",
-      "arlac77/npm-package-template-pacman",
-      "arlac77/npm-package-template-release"
+      "arlac77/npm-package-template-web-app",
+      "arlac77/npm-package-template-rollup"
     ],
     "usedBy": [
       "arlac77/hook-ci-frontend"
