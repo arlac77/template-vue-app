@@ -3,9 +3,8 @@
     "vue"
   ],
   "scripts": {
-    "start": "rollup -c rollup.config.js -w",
-    "prepare": "rollup -c rollup.config.js",
-    "package": "npm-pkgbuild pkgbuild pacman makepkg"
+    "start": "rollup -c -w",
+    "prepare": "rollup -c"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
