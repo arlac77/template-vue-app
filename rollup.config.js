@@ -7,7 +7,6 @@ import copy from "rollup-plugin-copy";
 import replace from "rollup-plugin-replace";
 import vue from "rollup-plugin-vue";
 import css from "rollup-plugin-css-only";
-import resolve from "@rollup/plugin-node-resolve";
 import nodeGlobals from "rollup-plugin-node-globals";
 import pkg, { config } from "./package.json";
 import history from "connect-history-api-fallback";
