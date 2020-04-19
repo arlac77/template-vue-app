@@ -4,7 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 
 
 import copy from "rollup-plugin-copy";
-import replace from "rollup-plugin-replace";
+import replace from "@rollup/plugin-replace";
 import vue from "rollup-plugin-vue";
 import css from "rollup-plugin-css-only";
 import nodeGlobals from "rollup-plugin-node-globals";
