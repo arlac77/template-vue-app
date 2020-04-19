@@ -3,8 +3,8 @@
     "vue"
   ],
   "scripts": {
-    "start": "overwrite rollup -c -w",
-    "prepare": "overwrite rollup -c"
+    "start": "rollup -c -w",
+    "prepare": "rollup -c"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
