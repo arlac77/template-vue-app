@@ -27,6 +27,10 @@
     "connect-history-api-fallback": "^1.6.0",
     "rollup-plugin-replace": "--delete--"
   },
+  "config": {
+    "api": "/services/{{name}}/api",
+    "proxyTarget": "https://somewhere/"
+  },
   "template": {
     "inheritFrom": [
       "arlac77/template-web-app",
