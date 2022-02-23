@@ -35,7 +35,6 @@
       "arlac77/template-rollup"
     ],
     "usedBy": [
-      "arlac77/hook-ci-frontend"
     ]
   }
 }
